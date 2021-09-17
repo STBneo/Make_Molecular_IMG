@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sys,os,glob
 
-
-
-
 def histogram_each(values_list,value_name):
     for i in ["Values","Values_Cumulative"]:
         plt.figure(figsize=(15,15))
@@ -26,7 +23,7 @@ def histogram_each(values_list,value_name):
 
 def Make_tiled_picture(output_path,a,b,f_list,fn):
     rows = int(a)
-    cols = int(a)
+    cols = int(b)
 
     fig = plt.figure(figsize=(rows*6,cols*6))
     i = 1
